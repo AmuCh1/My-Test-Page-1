@@ -1,0 +1,61 @@
+<!DOCTYPE html> <html><head>
+        <title>My Test Page</title>
+    <style>
+    th {background-color: green;}
+    #myTable {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+} 
+    </style>
+ 
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <link href="https://nightly.datatables.net/css/jquery.dataTables.css" rel="stylesheet" type="text/css" >
+    <script src="https://nightly.datatables.net/js/jquery.dataTables.js"></script>
+<link href="https://cdn.datatables.net/select/1.3.3/css/select.dataTables.css" rel="stylesheet" type="text/css" >
+<script src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.js"></script>
+
+
+
+       
+         </head>
+    <body>
+       
+            <h1 id="myH1">  this page to add this h1 line </h1>
+            <h2> second line </h2>
+            <table id="myTable" class="display">
+    <thead>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row 1 Data 1</td>
+            <td>Row 1 Data 2</td>
+        </tr>
+        <tr>
+            <td>Row 2 Data 1</td>
+            <td>Row 2 Data 2</td>
+        </tr>
+    </tbody>
+</table>
+<h3> end </h3>
+
+ <script>
+document.getElementById("myH2").innerHTML = "My First JavaScript";
+
+
+
+</script>
+   <script>
+$(document).ready(function(){
+document.getElementById("myH1").innerHTML = "My Second JavaScript";
+ var table = $('#myTable').DataTable();
+})
+</script>
+</body>
+</html>
